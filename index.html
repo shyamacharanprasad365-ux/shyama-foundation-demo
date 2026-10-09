@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="Shyama Foundation — a demo website concept for community support, education, health, and essential needs.">
+  <title>Shyama Foundation | Every Small Act Matters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#173f35;--green2:#245c4b;--lime:#d9f27c;--cream:#f8f7f0;--ink:#18231f;--muted:#64716a;--white:#fff;--line:#e5e8df;--coral:#e88b6a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}h1,h2,h3,.brand{font-family:Manrope,sans-serif;letter-spacing:-.035em}a{color:inherit;text-decoration:none}.wrap{width:min(1140px,calc(100% - 40px));margin:auto}
+    .demo{background:#fff1d7;color:#72501d;text-align:center;padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:.04em}
+    header{background:rgba(248,247,240,.94);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(23,63,53,.08);backdrop-filter:blur(12px)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--green)}.logo{width:40px;height:40px;border-radius:14px;background:var(--lime);display:grid;place-items:center;color:var(--green);font-size:22px}.links{display:flex;gap:27px;align-items:center;font-size:13px;font-weight:700;color:#42544b}.links a:hover{color:var(--green2)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:999px;background:var(--green);color:white;font-weight:700;font-size:13px;border:1px solid var(--green);transition:.2s;cursor:pointer}.btn:hover{transform:translateY(-2px);background:var(--green2)}.btn.light{background:var(--lime);border-color:var(--lime);color:var(--green)}.btn.outline{background:transparent;color:var(--green);border-color:#aab8ac}.menu{display:none;background:none;border:0;font-size:25px;color:var(--green)}
+    .hero{padding:66px 0 74px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green2);font-weight:800;text-transform:uppercase;letter-spacing:.13em;font-size:11px}.dot{width:8px;height:8px;border-radius:50%;background:var(--coral)}h1{font-size:clamp(43px,5.4vw,70px);line-height:1.04;margin:19px 0 22px;color:var(--green);max-width:620px}.hero p{font-size:17px;line-height:1.8;color:var(--muted);max-width:510px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}.hero-note{font-size:11px!important;margin-top:18px;color:#7b837d!important}.visual{min-height:470px;position:relative;border-radius:30px;background:#dce8d7;overflow:hidden;padding:25px;display:flex;align-items:flex-end}.visual img{position:absolute;width:100%;height:100%;inset:0;object-fit:cover}.visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,51,40,.03) 35%,rgba(16,51,40,.7) 100%)}.visual-caption{position:relative;z-index:1;color:white;max-width:350px}.visual-caption strong{font-family:Manrope,sans-serif;font-size:25px;line-height:1.2;display:block}.visual-caption span{font-size:12px;opacity:.9;display:block;margin-top:8px}.floating{position:absolute;z-index:2;top:22px;left:22px;background:#fff;border-radius:18px;padding:15px 17px;box-shadow:0 14px 40px #173f3520}.floating b{display:block;font-family:Manrope,sans-serif;color:var(--green);font-size:18px}.floating small{color:var(--muted);font-size:11px}
+    .ticker{background:var(--green);color:white;padding:19px 0}.ticker-inner{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}.ticker span{font-size:12px;color:#dbe7dc}.ticker strong{font-size:14px;letter-spacing:.01em}
+    section{padding:85px 0}.section-head{max-width:660px;margin-bottom:36px}.section-head h2{font-size:clamp(32px,4vw,48px);line-height:1.12;color:var(--green);margin:13px 0}.section-head p{color:var(--muted);margin:0;font-size:15px}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.about-art{min-height:370px;background:var(--lime);border-radius:26px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.about-art .big{font-family:Manrope,sans-serif;font-size:clamp(54px,7vw,90px);font-weight:800;line-height:.95;color:var(--green);max-width:320px}.about-art p{max-width:240px;font-size:13px;color:#355347}.sun{position:absolute;width:180px;height:180px;border-radius:50%;background:#f5a47f;right:-40px;bottom:48px;opacity:.85}.sun:after{content:"";position:absolute;inset:25px;border:1px solid #173f3540;border-radius:50%}.about-copy h3{font-size:24px;color:var(--green);margin:0 0 12px}.about-copy p{color:var(--muted);font-size:14px}.values{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}.value{border-top:1px solid var(--line);padding-top:13px}.value b{display:block;color:var(--green);font-size:14px}.value span{font-size:12px;color:var(--muted)}
+    .mission{background:#edf1e8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:white;border:1px solid #e5e9df;border-radius:22px;padding:25px;min-height:235px}.card-icon{width:45px;height:45px;border-radius:15px;background:#e9f4d1;display:grid;place-items:center;font-size:22px}.card h3{font-size:20px;color:var(--green);margin:20px 0 8px}.card p{font-size:13px;color:var(--muted);margin:0}.card a{display:inline-block;margin-top:17px;color:var(--green2);font-size:12px;font-weight:800}
+    .impact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}.impact-box{background:var(--green);border-radius:27px;padding:34px;color:white}.impact-box h3{font-size:28px;line-height:1.15;margin:0 0 12px}.impact-box p{font-size:13px;color:#d7e3d9}.impact-box .btn{margin-top:12px}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:14px}.metric{padding:24px 20px;border:1px solid var(--line);border-radius:19px;background:white}.metric strong{display:block;font-family:Manrope,sans-serif;font-size:34px;color:var(--green)}.metric span{font-size:12px;color:var(--muted)}.metric small{display:block;color:#946e4c;font-size:10px;margin-top:8px}
+    .volunteer{background:#f0dfd3}.vol-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:start}.vol-copy h2{font-size:clamp(34px,4vw,48px);line-height:1.1;color:var(--green);margin:13px 0}.vol-copy p{color:#625f57;font-size:14px}.promise{margin-top:25px;padding:18px;border-left:3px solid var(--coral);background:#ffffff80;font-size:13px;color:#625f57}.form-card{background:white;padding:28px;border-radius:24px;box-shadow:0 15px 50px #4b38220a}.form-card h3{font-size:22px;color:var(--green);margin:0 0 4px}.form-card>p{font-size:12px;color:var(--muted);margin:0 0 20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800;color:#405148}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #dfe5dc;border-radius:10px;background:#fbfcf9;font:inherit;font-size:13px;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#7c9d83}.field textarea{min-height:90px;resize:vertical}.form-foot{display:flex;gap:12px;align-items:flex-start;font-size:10px;color:#7a817b;margin:15px 0}.form-card .btn{width:100%}.form-result{font-size:12px;margin-top:12px;color:var(--green);font-weight:700}
+    .donate-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.donate-panel{padding:30px;border:1px solid var(--line);border-radius:24px;background:white}.donate-panel.dark{background:var(--green);color:white;border-color:var(--green)}.donate-panel h3{font-size:24px;margin:0 0 12px}.donate-panel p{font-size:13px;color:var(--muted)}.donate-panel.dark p{color:#d5e1d7}.donate-panel .btn{margin-top:12px}.notice{font-size:11px!important;padding:12px;border-radius:10px;background:#fff3dd;color:#775521!important;margin-top:20px}
+    .contact{background:#e9eee5}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}.contact h2{font-size:clamp(34px,4vw,48px);line-height:1.1;color:var(--green);margin:13px 0}.contact p{color:var(--muted);font-size:14px}.contact-list{display:grid;gap:13px;margin-top:25px}.contact-item{display:flex;gap:13px;align-items:center;font-size:13px}.contact-item i{font-style:normal;width:38px;height:38px;border-radius:12px;background:white;display:grid;place-items:center}.contact-box{padding:28px;border-radius:22px;background:white}.contact-box h3{color:var(--green);margin:0 0 8px}.contact-box p{font-size:12px}.contact-box .btn{margin-top:10px}
+    footer{background:#102e27;color:white;padding:30px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footer-brand{font-family:Manrope,sans-serif;font-weight:800}.footer-brand span{display:block;color:#b9c9bf;font:11px "DM Sans",sans-serif;margin-top:4px}.footer-links{display:flex;gap:18px;font-size:11px;color:#d3ded6}.footer-note{font-size:10px;color:#aebfb4;width:100%;border-top:1px solid #ffffff20;padding-top:17px;margin-top:10px}
+    @media(max-width:850px){.links{display:none;position:absolute;top:78px;left:0;right:0;background:var(--cream);padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}.nav>.btn{display:none}.hero-grid,.about-grid,.impact-grid,.vol-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.hero{padding-top:40px}.visual{min-height:390px}.cards{grid-template-columns:1fr 1fr}.about-art{min-height:300px}.impact-grid{gap:25px}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,1140px)}.nav{height:68px}.links{top:68px}.brand{font-size:16px}.logo{width:36px;height:36px}.hero{padding:36px 0 50px}.hero-grid{gap:28px}h1{font-size:45px}.hero p{font-size:15px}.visual{min-height:330px;padding:18px}.floating{top:14px;left:14px}.ticker-inner{justify-content:flex-start;gap:10px 20px}.ticker-inner>div{width:44%}section{padding:60px 0}.cards{grid-template-columns:1fr}.card{min-height:0}.metrics{gap:10px}.metric{padding:18px 14px}.metric strong{font-size:28px}.values,.donate-grid{grid-template-columns:1fr}.form-card{padding:20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+  <div class="demo">DEMO WEBSITE CONCEPT · NOT A REGISTERED NGO CLAIM · DEMO CONTENT MUST BE VERIFIED BEFORE PUBLIC LAUNCH</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Shyama Foundation home"><span class="logo">✳</span><span>Shyama Foundation</span></a>
+      <nav class="links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#mission">Our Mission</a><a href="#impact">Impact</a><a href="#volunteer">Volunteer</a><a href="#donate">Support Us</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="btn" href="#volunteer">Get Involved ↗</a>
+      <button class="menu" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Compassion in action</div>
+          <h1>Small acts.<br>Brighter <span style="color:#e88b6a">tomorrows.</span></h1>
+          <p>We believe every community deserves a chance to thrive. Shyama Foundation is a demo concept built around kindness, dignity, and practical support for people who need it most.</p>
+          <div class="hero-actions"><a class="btn" href="#mission">Explore our mission ↘</a><a class="btn outline" href="#volunteer">Become a volunteer</a></div>
+          <p class="hero-note">A demo concept for a future social-impact initiative. Programs, claims and contact details are not yet verified.</p>
+        </div>
+        <div class="visual" role="img" aria-label="Community members working together outdoors">
+          <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=85" alt="Volunteers coming together for community support" onerror="this.style.display='none'">
+          <div class="floating"><b>One community</b><small>Many ways to make a difference</small></div>
+          <div class="visual-caption"><strong>Hope grows when we grow together.</strong><span>Listen first. Help thoughtfully. Build lasting change.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker"><div class="wrap ticker-inner">
+      <div><strong>01 / Dignity</strong><br><span>Every person deserves respect.</span></div>
+      <div><strong>02 / Opportunity</strong><br><span>Open doors to a better future.</span></div>
+      <div><strong>03 / Community</strong><br><span>Change starts by standing together.</span></div>
+    </div></div>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <div class="about-art"><div class="eyebrow">Who we want to be</div><div class="big">Care is<br>a shared<br>language.</div><p>A people-first approach to community support, built on transparency and empathy.</p><div class="sun"></div></div>
+        <div class="about-copy">
+          <div class="eyebrow">About Shyama Foundation</div>
+          <h3>A thoughtful start to meaningful change.</h3>
+          <p>Shyama Foundation is presented here as a proposed non-profit initiative. Its vision is to connect people, resources and local action so that support reaches communities in practical, respectful ways.</p>
+          <p>This demo does not represent an existing registration, active program, verified beneficiary count or official charitable status. Before launch, replace this copy with the organisation's real background, leadership and verified details.</p>
+          <div class="values"><div class="value"><b>People first</b><span>Listen to communities and their priorities.</span></div><div class="value"><b>Open & accountable</b><span>Communicate clearly about funds and outcomes.</span></div><div class="value"><b>Local collaboration</b><span>Work alongside volunteers and trusted partners.</span></div><div class="value"><b>Long-term thinking</b><span>Focus on sustainable, practical support.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission" id="mission">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Our mission</div><h2>Support that meets real needs.</h2><p>These are proposed focus areas for the demo. Actual activities should be added only when they are planned, resourced and ready to deliver.</p></div>
+        <div class="cards">
+          <article class="card"><div class="card-icon">✚</div><h3>Health & wellbeing</h3><p>Help people find reliable health information and explore support pathways for treatment and wellbeing.</p><a href="#contact">Explore this focus ↗</a></article>
+          <article class="card"><div class="card-icon">✎</div><h3>Education & skills</h3><p>Encourage learning opportunities, practical skills and access to educational resources for young people.</p><a href="#contact">Explore this focus ↗</a></article>
+          <article class="card"><div class="card-icon">♡</div><h3>Essential needs</h3><p>Develop responsible ways to connect families with food, essential supplies and community support.</p><a href="#contact">Explore this focus ↗</a></article>
+          <article class="card"><div class="card-icon">⌂</div><h3>Community care</h3><p>Build local networks that help people feel seen, heard and connected to useful services.</p><a href="#contact">Explore this focus ↗</a></article>
+          <article class="card"><div class="card-icon">♻</div><h3>Environment</h3><p>Explore neighbourhood clean-ups, awareness activities and everyday sustainable habits.</p><a href="#contact">Explore this focus ↗</a></article>
+          <article class="card"><div class="card-icon">↗</div><h3>Emergency support</h3><p>Plan transparent, verified community response efforts in coordination with appropriate local partners.</p><a href="#contact">Explore this focus ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact">
+      <div class="wrap impact-grid">
+        <div class="impact-box"><div class="eyebrow" style="color:var(--lime)">Impact with integrity</div><h3>Measure what matters. Share what is true.</h3><p>Real impact begins with clear goals and honest reporting. Once activities begin, publish verified outcomes and explain how progress is measured.</p><a class="btn light" href="#volunteer">Help build the plan ↗</a></div>
+        <div><div class="section-head"><div class="eyebrow">Our impact framework</div><h2>Built for accountability.</h2><p>No impact figures are claimed on this demo site. These placeholders show the types of metrics the foundation could publish after verification.</p></div>
+          <div class="metrics"><div class="metric"><strong>—</strong><span>People supported</span><small>DEMO · Verified data pending</small></div><div class="metric"><strong>—</strong><span>Community projects</span><small>DEMO · Verified data pending</small></div><div class="metric"><strong>—</strong><span>Active volunteers</span><small>DEMO · Verified data pending</small></div><div class="metric"><strong>—</strong><span>Funds accounted for</span><small>DEMO · Verified data pending</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="volunteer" id="volunteer">
+      <div class="wrap vol-grid">
+        <div class="vol-copy"><div class="eyebrow">Be part of the change</div><h2>Your time can mean a lot.</h2><p>Want to contribute your skills, time or ideas? Use this demo form to preview the volunteer experience. It does not send or store information.</p><div class="promise"><b>Our commitment:</b> any real volunteer programme should explain roles, safeguarding, privacy and how people will be contacted before collecting personal details.</div></div>
+        <div class="form-card"><h3>Volunteer interest form</h3><p>Demo only · Entries stay in your browser and are not submitted anywhere.</p>
+          <form id="volForm">
+            <div class="form-grid">
+              <div class="field"><label for="name">Full name *</label><input id="name" name="name" required placeholder="Your name"></div>
+              <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+              <div class="field"><label for="interest">Area of interest *</label><select id="interest" name="interest" required><option value="">Choose one</option><option>Health & wellbeing</option><option>Education & skills</option><option>Essential needs</option><option>Community care</option><option>Environment</option><option>Other / flexible</option></select></div>
+              <div class="field"><label for="time">Availability</label><select id="time" name="time"><option>Flexible</option><option>Weekdays</option><option>Weekends</option><option>Occasional events</option></select></div>
+              <div class="field full"><label for="message">A little about how you'd like to help</label><textarea id="message" name="message" placeholder="Share your interests or skills (optional)"></textarea></div>
+            </div>
+            <div class="form-foot"><span>ⓘ</span><span>Do not enter sensitive personal or financial information. This demo form does not transmit data.</span></div>
+            <button class="btn" type="submit">Preview submission ↗</button><div id="formResult" class="form-result" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Support the vision</div><h2>Every contribution deserves transparency.</h2><p>There is no payment gateway or donation account connected to this demo. Real donation details should be published only after legal, banking and compliance checks.</p></div>
+        <div class="donate-grid">
+          <div class="donate-panel dark"><h3>Give time, skills or ideas.</h3><p>Support the early planning stage by sharing expertise, volunteering or helping identify community priorities.</p><a class="btn light" href="#volunteer">Register interest ↗</a></div>
+          <div class="donate-panel"><h3>Considering a financial donation?</h3><p>Please wait until the organisation's identity, registration status (if applicable), official bank account, receipts and relevant tax information have been independently verified.</p><div class="notice"><b>Demo notice:</b> No UPI ID, bank details, QR code or payment link is provided here. Do not send money based on this demo page.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
+        <div><div class="eyebrow">Let's connect</div><h2>Good things start with a conversation.</h2><p>Interested in collaborating or learning more about the proposed initiative? Add official contact details here before publishing the website as a live organisation.</p>
+          <div class="contact-list"><div class="contact-item"><i>✉</i><span><b>Email</b><br>Official email not added yet</span></div><div class="contact-item"><i>⌖</i><span><b>Location</b><br>Official address not added yet</span></div><div class="contact-item"><i>◷</i><span><b>Availability</b><br>Contact hours to be confirmed</span></div></div>
+        </div>
+        <div class="contact-box"><h3>Before the public launch</h3><p>Replace demo content with verified information, choose an official contact channel, add a privacy notice and confirm any registration or compliance statements.</p><p><b>Suggested checklist</b></p><p>✓ Confirm name availability and legal status<br>✓ Verify leadership and contact details<br>✓ Publish a privacy policy<br>✓ Add only verified programmes and impact data<br>✓ Review donation and tax-related claims</p><a class="btn" href="#about">Review the demo ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><div class="footer-brand">✳ Shyama Foundation<span>A proposed social-impact initiative · Demo website</span></div><div class="footer-links"><a href="#about">About</a><a href="#mission">Mission</a><a href="#volunteer">Volunteer</a><a href="#donate">Support</a><a href="#contact">Contact</a></div><div class="footer-note">This is a demo website concept, not proof of NGO registration or charitable status. No donations are collected and no form data is transmitted. © <span id="year"></span> Shyama Foundation — demo concept.</div></div></footer>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.textContent = open ? '×' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.textContent='☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('volForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      document.getElementById('formResult').textContent = `Thanks${name ? ', ' + name : ''}! This is only a preview — your details were not sent or saved.`;
+    });
+  </script>
+</body>
+</html>
